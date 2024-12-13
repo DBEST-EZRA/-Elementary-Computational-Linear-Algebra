@@ -47,3 +47,29 @@ For each compression level, the following were calculated:
 - Storage space used relative to the original image.
 
 Example output:
+
+
+## Files Included:
+- `attface.zip`: The dataset of face images.
+- `image_compression_svd.py`: Python script that implements the compression process, including SVD, image reconstruction, and face recognition.
+- `README.md`: This file.
+
+## Requirements:
+- Python 3.x
+- Libraries: `numpy`, `matplotlib`, `opencv`, `zipfile`
+
+## How to Run:
+1. **Download and unzip the dataset** (`attface.zip`) and place it in the same directory as the script.
+2. **Run the script**: 
+    ```bash
+    python image_compression_svd.py
+    ```
+3. **Visualize the results**: The script will display the original and compressed images for each level of compression and print the storage savings.
+
+## Conclusion:
+This assignment demonstrates how SVD can be used for image compression, showing how the number of singular values affects both image quality and storage requirements. By using only the largest singular values, significant storage savings can be achieved without a major loss in image quality.
+
+## References:
+- Olivetti Research Laboratory (ORL) Face Database: [Link](https://www.cam-orl.co.uk/facedatabase.html)
+- Singular Value Decomposition: [Link](https://en.wikipedia.org/wiki/Singular_value_decomposition)
+
